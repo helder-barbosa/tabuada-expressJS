@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js",
+    "coverage": "node_modules\\.bin\\istanbul cover node_modules\\mocha\\bin\\_mocha -- --reporter spec **/*.test.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "chai": "^4.3.4",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "istanbul": "^0.4.5",
     "mocha": "^8.3.2",
     "sinon": "^2.4.1"
   }
