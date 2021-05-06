@@ -4,21 +4,21 @@
     </h1>
     <p class="lead">Gere tabuadas de números de 1 a 100.</p>
     <table class="table table-striped table-bordered table-hover">
-      <% for(let i=0; i<=100; i++){ %>
+      <% tabuadas.map (item=> { %>
         <tr>
           <td>
-            <%= num %>
+            <%= item.num %>
           </td>
           <td>&nbsp; X &nbsp;</td>
           <td>
-            <%= i %>
+            <%= item.i %>
           </td>
           <td>&nbsp; = &nbsp;</td>
           <td>
-            <%= (num*i) %>
+            <%= item.resultado %>
           </td>
         </tr>
-        <% } %>
+        <% }) %>
     </table>
   </div>
   <%- include('../partials/footer') %>
